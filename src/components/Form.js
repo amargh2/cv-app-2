@@ -14,7 +14,6 @@ function Form(props) {
           <label htmlFor="name">Name:</label>
           <input onChange={(event)=>  nameHandleChange(event.target.value)} type="text" name="name" id="name" className='border-4 rounded-md border-blue-200'/>
           <div><button onClick={() => props.setName(nameInput)} className='bg-sky-200 rounded-lg px-2 py-2 hover:bg-white'>submit</button></div>
-          <div>You entered {nameInput}</div>
         </div>
         
         <div className='gap-2 flex'>
